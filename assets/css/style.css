@@ -1030,7 +1030,7 @@ section {
 
 
 
-#button1 {
+button {
   position: relative;
   display: inline-block;
   border: none;
@@ -1045,7 +1045,7 @@ section {
   cursor: pointer;
   overflow: hidden;
 }
-#button1::before {
+button::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -1061,25 +1061,25 @@ section {
   transition: transform 0.5s;
 }
 
-#button1:hover::before {
+button:hover::before {
   transform: none;
 }
 
-#button1 span {
+button span {
   display: inline-block;
   padding: 0.8rem 1.2rem;
   transition: transform 0.5s;
 }
 
-#button1:hover span {
+button:hover span {
   transform: translateX(100%);
 
  }
  @media (max-width:600px) {
-  #button1 {
+  button {
     font-size: 0.7rem;
   }
-  #button1 span {
+  button span {
     padding: 0.6rem 0.35rem;
   }
   }
